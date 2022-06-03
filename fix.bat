@@ -3,8 +3,8 @@ goto fix
 
 :fix
 cd C:\Windows\System32
-reg export HKEY_CLASSES_ROOT\ms-mstd C:\ms-greatatsecuringsoftware.reg
-reg delete HKEY_CLASSES_ROOT\ms-mstd /f
+reg export HKEY_CLASSES_ROOT\ms-msdt C:\ms-greatatsecuringsoftware.reg
+reg delete HKEY_CLASSES_ROOT\ms-msdt /f
 goto end
 
 :end
