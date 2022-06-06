@@ -1,5 +1,5 @@
 @echo off
-title Fixing Microshaft software
+title Halal Microsoft
 @echo off
 if not "%1"=="am_admin" (
     title Requesting admin permissions...
@@ -16,5 +16,5 @@ reg delete HKEY_CLASSES_ROOT\ms-msdt /f
 goto end
 
 :end
-echo Thanks Microsoft for making shit software!
+echo Thanks Microsoft for making secure software!
 pause
