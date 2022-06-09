@@ -8,5 +8,5 @@ del C:\ms-greatatsecuringsoftware.reg
 goto end
 
 :end
-echo Thanks Microsoft for making secure software!
+echo I have finished restoring the Microsoft Software. Thanks Microsoft for making secure software!
 pause
