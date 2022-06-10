@@ -1,10 +1,14 @@
 @echo off
 goto restore
-
+if not "%1"=="am_admin" (
+    title Requesting admin permissions...
+    powershell -Command "Start-Process -Verb RunAs -FilePath '%0' -ArgumentList 'am_admin'"
+    exit /b
+)
 :restore
 cd C:\Windows\System32
-reg import C:\ms-greatatsecuringsoftware.reg
-del C:\ms-greatatsecuringsoftware.reg
+reg import C:\bk.reg
+del C:\bk.reg
 goto end
 
 :end
